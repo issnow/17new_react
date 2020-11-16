@@ -1,4 +1,5 @@
 import React, { useState, useContext, useEffect, useCallback, useMemo } from 'react';
+import { Button } from 'antd'
 /**
   * 函数式更新
   如果新的 state 需要通过使用先前的 state 计算得出，那么可以将函数传递给 setState。
@@ -10,6 +11,7 @@ export default function Index() {
   return (
     <div>
       <p>count: {count}</p>
+      <Button>click</Button>
       <button onClick={()=>{setCount(p=>++p)}}>++</button>
       <button onClick={()=>{setCount(p=>--p)}}>--</button>
     </div>
