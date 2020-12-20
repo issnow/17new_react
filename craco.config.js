@@ -82,6 +82,7 @@ module.exports = {
         libraryName: 'antd',
         style: true
       }],
+      // 支持装饰器写法
       ['@babel/plugin-proposal-decorators', {
         legacy: true
       }]

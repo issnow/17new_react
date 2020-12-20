@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p style="font-size: 30px;">0</p>
+  <script>
+    let p = document.querySelector('p')
+    let count = 0
+    let fn = ()=>{
+      p.innerHTML = ++count
+    }
+    // document.addEventListener('mousemove', fn)
+    document.addEventListener('mousemove', debounce(fn,400))
+
+    function throttle(fn, delay) {
+      let timer = null
+      return function (...arr) {
+        let context = this
+        if(!timer) {
+          timer = setTimeout(function () {
+            fn.apply(context, arr)
+            timer = null
+          }, delay)
+        }
+      }
+    }
+
+    function debounce(fn,delay) {
+      let timer = null
+      return function (...arr) {
+        let context = this
+        clearInterval(timer)
+        timer = setTimeout(function() {
+          fn.apply(context, arr)
+        }, delay)
+      }
+    }
+  </script>
+</body>
+</html>

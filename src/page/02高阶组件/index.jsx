@@ -7,6 +7,11 @@ export default class Index extends Component {
       <div>
         <Username></Username>
         <Pwd></Pwd>
+        <button onClick={()=>{
+          this.props.history.push({
+            pathname: '/other'
+          })
+        }}>click</button>
       </div>
     )
   }
