@@ -5,6 +5,7 @@ function Page({store}) {
   return (
     <div>
       <h3>数字:{store.n}</h3>
+      <h4>computed: {store.add10}</h4>
       <button onClick={()=>{
         store.add(4)
       }}>click++</button>
