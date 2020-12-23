@@ -5608,7 +5608,7 @@ hmac-drbg@^1.0.0:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.1"
 
-hoist-non-react-statics@^3.1.0, hoist-non-react-statics@^3.3.2:
+hoist-non-react-statics@^3.0.0, hoist-non-react-statics@^3.1.0, hoist-non-react-statics@^3.3.2:
   version "3.3.2"
   resolved "https://registry.npm.taobao.org/hoist-non-react-statics/download/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
   integrity sha1-7OCsr3HWLClpwuxZ/v9CpLGoW0U=
@@ -7589,17 +7589,13 @@ mkdirp@^1.0.3, mkdirp@^1.0.4:
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
 
-mobx-react-lite@^3.1.6:
-  version "3.1.6"
-  resolved "https://registry.npm.taobao.org/mobx-react-lite/download/mobx-react-lite-3.1.6.tgz#e7f4809ab66edd1acca5adb00c6b88c600ae1952"
-  integrity sha1-5/SAmrZu3RrMpa2wDGuIxgCuGVI=
-
-mobx-react@^7.0.5:
-  version "7.0.5"
-  resolved "https://registry.npm.taobao.org/mobx-react/download/mobx-react-7.0.5.tgz#a458ec3fd44349d398274eb08aec1abe9b5129ff"
-  integrity sha1-pFjsP9RDSdOYJ06wiuwavptRKf8=
+mobx-react@5.4.4:
+  version "5.4.4"
+  resolved "https://registry.npm.taobao.org/mobx-react/download/mobx-react-5.4.4.tgz#b3de9c6eabcd0ed8a40036888cb0221ab9568b80"
+  integrity sha1-s96cbqvNDtikADaIjLAiGrlWi4A=
   dependencies:
-    mobx-react-lite "^3.1.6"
+    hoist-non-react-statics "^3.0.0"
+    react-lifecycles-compat "^3.0.2"
 
 mobx@5.15.7:
   version "5.15.7"
@@ -9772,7 +9768,7 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.1.tgz#5b3531bd76a645a4c9fb6e693ed36419e3301339"
   integrity sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
 
-react-lifecycles-compat@^3.0.4:
+react-lifecycles-compat@^3.0.2, react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.npm.taobao.org/react-lifecycles-compat/download/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha1-TxonOv38jzSIqMUWv9p4+HI1I2I=
