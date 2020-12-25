@@ -13,7 +13,8 @@ import App from './01上传/03.jsx'
 // import App1 from './08React-memo/01memo.jsx'
 // import App1 from './09router/app.jsx'
 // import App1 from './11mobx-v6/app.jsx'
-import App1 from './12mobx-v5/app.jsx'
+// import App1 from './12mobx-v5/app.jsx'
+import App1 from './11mobx_test/index.jsx'
 import { BrowserRouter as Router,HashRouter as Router2, Route,Switch } from 'react-router-dom'
 
 render(<Router>
